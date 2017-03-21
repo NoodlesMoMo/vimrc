@@ -432,7 +432,7 @@ endfunction
 "endif
 "
 
-# Added by noodles
+" Added by noodles
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -445,6 +445,7 @@ filetype plugin indent on
 
 " close the Scratch preview window
 set completeopt-=preview
+let g:ycm_path_to_python_interpreter='/usr/bin/python2'
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
