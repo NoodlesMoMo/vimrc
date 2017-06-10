@@ -144,6 +144,9 @@ let g:go_fmt_command = "goimports"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Python
 let g:syntastic_python_checkers=['pyflakes']
+let g:pyflakes_use_quickfix = 1
+let g:flake8_show_in_gutter = 1
+let g:syntastic_python_flake8_exe='python -m flake8 | SyntasticCheck'
 
 " Javascript
 let g:syntastic_javascript_checkers = ['jshint']

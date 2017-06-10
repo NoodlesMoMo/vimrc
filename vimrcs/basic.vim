@@ -455,7 +455,7 @@ nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_show_diagnostics_ui=1
-let g:ycm_enable_diagnostic_highlighting=0
+"let g:ycm_enable_diagnostic_highlighting=0
 let g:ycm_error_symbol='X'
 set nu
 
