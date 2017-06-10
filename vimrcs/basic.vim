@@ -440,6 +440,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Valloric/ListToggle'
+Plugin 'nsf/gocode',{'rtp':'vim/'}
+Plugin 'mileszs/ack.vim'
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -451,4 +454,9 @@ let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_show_diagnostics_ui=1
+let g:ycm_enable_diagnostic_highlighting=0
+let g:ycm_error_symbol='X'
 set nu
+
+let g:ackprg='ag --nogroup --nocolor --column'

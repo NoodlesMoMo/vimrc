@@ -150,7 +150,8 @@ let g:syntastic_javascript_checkers = ['jshint']
 
 " Go
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+"let g:syntastic_go_checkers = ['go', 'golint', 'errcheck'] // commited by mangj
+let g:syntastic_go_checkers = ['go', 'errcheck']
 
 " Custom CoffeeScript SyntasticCheck
 func! SyntasticCheckCoffeescript()
